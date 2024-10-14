@@ -3,9 +3,10 @@
 
   inputs = {
     flake-parts.url = "github:hercules-ci/flake-parts";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    #nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nim65s/nixpkgs/qt6-libqglviewer";
     sofa = {
-      url = "github:nim65s/sofa"; # update this after PR
+      url = "github:nim65s/sofa/qt6"; # update this after PR
       inputs = {
         flake-parts.follows = "flake-parts";
         nixpkgs.follows = "nixpkgs";
